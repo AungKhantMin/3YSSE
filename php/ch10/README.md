@@ -34,6 +34,20 @@ syntax
     setcookie('Cookie Name', "", time()-3600);
     // Change The Time and set value to null
 
-    // 
+    // Playin With Cookie array
+    setcookie('test[$n]', 'value', time()+3600);
+
+    //Accessing Cookie Through Global Variable
+    //$_COOKIE is The Global variable to access cookies store in browser
+
+    // Accessing Normal Cookie
+
+    $_COOKIE['name'];
+
+    // Accessing Array Cookie
+
+    $_COOKIE['name'][$n];
+
+    // This Is all You need to know about
 
 ```
