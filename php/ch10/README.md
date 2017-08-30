@@ -48,6 +48,6 @@ syntax
 
     $_COOKIE['name'][$n];
 
-    // This Is all You need to know about
+    // This Is all You need to know  about cookie
 
 ```
