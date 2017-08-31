@@ -76,3 +76,46 @@
 
 
 ```
+
+
+
+
+###  Interface
+
+
+```java
+
+  // Creating an Interface
+
+  public interface Payable{
+    double getAmount(); // no need public keyword
+  }
+
+  // implementing Interface
+
+  public class TestPay implements Payable {
+    // Like Abstract class we need to Override the interface method
+
+    @Override
+    public double getAmount(){
+      return 34.00; // any double value can return
+    }
+  }
+
+  // implementing interface from a child method of an Abstract class which implement interface
+
+  public abstract class Test implements Payable{
+    // We will not Override the interface method in This Class
+  }
+
+  public class TestAbs extends Test{
+    // We will Override The Interface method here
+
+    @Override
+    public double getAmount(){
+      return 345.6;
+    }
+  }
+
+
+```
