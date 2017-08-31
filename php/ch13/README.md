@@ -59,3 +59,55 @@ We can only add red, blue, green value to color
 
     # This Query will show the row froms 2 to 3
 ```
+
+
+
+### Sorting result
+
+```mysql
+
+  #result will sort according to the firstName
+  SELECT username, firstName, lastName FROM members ORDER BY firstName;
+
+
+  # result will be sort according to the favoriteGenre and firstName
+  # when sorting favoriteGenre is first priority and firstName is second priority
+  SELECT favoriteGenre, firstName, lastName FROM members ORDER BY favoriteGenre, firstName;
+
+
+
+  #result will be sort according to the descending order of favoriteGenre and ascending order of firstName
+  SELECT favoriteGenre, firstName, lastName FROM members ORDER BY favoriteGenre DESC, firstName ASC;
+
+
+```
+
+
+
+### Use pattern Matching
+
+There are two wild card symbols to use in searching data '%' and '_'
+
+'%' is use when we want to find words or one or more characters
+'_' is use when you want to find the exactly one character  value in tables  
+
+```mysql
+
+  # This will return all data which contain 'travel'
+  SELECT username, firstName, lastName, otherInterests FROM members
+  WHERE otherInterests LIKE ‘%travel%’;
+
+  # This Will return the only exact values.
+  SELECT firstName, lastName FROM members WHERE firstName LIKE ‘Mar_y’
+
+
+  # This is same with % but it is use NOT LIKE instead of LIKE
+  # so it will return the data which do not contain travel
+  SELECT username, firstName, lastName, otherInterests FROM members
+  WHERE otherInterests NOT LIKE ‘%travel%’;
+
+
+```
+
+
+### Summarizing Data 
