@@ -51,3 +51,47 @@ syntax
     // This Is all You need to know  about cookie
 
 ```
+
+And Another tricky things is how to setup an object array
+
+
+```php
+  $products = array(
+    1 => new Product('Name', Price, Quantity) ,
+  );
+```
+
+
+## Sessions
+
+There is only few things we need to know about How to setup Sessions, how to use Sessions and how to destroy Sessions Another Rule You need to know about session is you need to start the sessions before any documents is sent
+
+
+syntax
+
+
+```php
+  // Starting The Session. This statement must be at the top of the document
+  session_start();
+
+  // Using Session Variable
+  $_SESSION['variableName']
+
+  // destroying Sessions
+
+  session_unset(); // This delete all session variable
+  session_destroy(); // this destroy the session  
+
+
+```
+
+Another things you need to know in chp 10 is how to declare constant
+
+```php
+
+  define('Constant Name', 'Value');
+  define('GGWP', 'NEWBIE'); //example of how to declare constant
+
+```
+
+This Is all About You need To know in Chapter 10
