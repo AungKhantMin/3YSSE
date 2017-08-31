@@ -77,6 +77,12 @@ syntax
   // Using Session Variable
   $_SESSION['variableName']
 
+
+  // Closing session
+  session_write_close(); // this function is use to close the current session
+
+  // Important it is not same with destroying session
+
   // destroying Sessions
 
   session_unset(); // This delete all session variable
