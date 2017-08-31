@@ -110,4 +110,10 @@ There are two wild card symbols to use in searching data '%' and '_'
 ```
 
 
-### Summarizing Data 
+### Summarizing Data
+
+1. count() — Returns the number of rows selected by the query
+2. sum() — Returns the total of all the values of a given field selected by the query
+3. min() — Returns the minimum value of all the values of a given field selected by the query
+4. max() — Returns the maximum value of all the values of a given field selected by the query
+5. avg() — Returns the average of all the values of a given field selected by the query
